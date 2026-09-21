@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Block Bloom</string>
+
+    <!-- Common -->
+    <string name="common_back">Volver</string>
+    <string name="common_coins_format">🪙 %1$d</string>
+
+    <!-- Menu Screen -->
+    <string name="menu_title_block">BLOCK</string>
+    <string name="menu_title_bloom">BLOOM</string>
+    <string name="menu_play">JUGAR</string>
+    <string name="menu_daily_challenge">RETO DIARIO</string>
+    <string name="menu_shop">TIENDA</string>
+    <string name="menu_settings">AJUSTES</string>
+
+    <!-- Game Screen -->
+    <string name="game_high_score_label">RÉCORD</string>
+    <string name="game_streak_format">STREAK x%1$d 🔥</string>
+    <string name="game_bomb_mode_active">🚨 MODO BOMBA ACTIVO 🚨\nToca una casilla para limpiar un área de 3x3</string>
+    <string name="game_shuffle_button">🔀 Mezclar (50 🪙)</string>
+    <string name="game_bomb_button">💣 Bomba (100 🪙)</string>
+    <string name="game_cancel">❌ Cancelar</string>
+    <string name="game_combo_incredible">INCREÍBLE! 🔥</string>
+    <string name="game_combo_super">SÚPER! ✨</string>
+    <string name="game_combo">COMBO! 💥</string>
+    <string name="game_rotate_cost">🔄 25</string>
+
+    <!-- Game Over Screen -->
+    <string name="game_over_title">¡FIN DEL JUEGO!</string>
+    <string name="game_over_score_label">PUNTUACIÓN</string>
+    <string name="game_over_new_record">¡NUEVO RÉCORD!</string>
+    <string name="game_over_personal_best">Récord personal</string>
+    <string name="game_over_continue_video">CONTINUAR (VÍDEO)</string>
+    <string name="game_over_continue_coins">CONTINUAR (200 🪙)</string>
+    <string name="game_over_retry">REINTENTAR</string>
+    <string name="game_over_menu">MENÚ PRINCIPAL</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">AJUSTES</string>
+    <string name="settings_sound_effects">Efectos de Sonido</string>
+    <string name="settings_vibration">Vibración (Háptica)</string>
+    <string name="settings_version_format">Versión %1$s</string>
+
+    <!-- Shop Screen -->
+    <string name="shop_title">TIENDA</string>
+    <string name="shop_free_coins">Monedas Gratis</string>
+    <string name="shop_watch_video">Ver Vídeo</string>
+    <string name="shop_coins_reward">+100 Monedas</string>
+    <string name="shop_watch">VER</string>
+    <string name="shop_coin_packs">Packs de Monedas</string>
+    <string name="shop_remove_ads">Quitar Anuncios</string>
+    <string name="shop_remove_ads_desc">Disfruta sin interrupciones</string>
+    <string name="shop_buy">COMPRAR</string>
+    <string name="shop_custom_themes">Temas Personalizados</string>
+    <string name="shop_theme_classic">Tema Clásico</string>
+    <string name="shop_theme_neon">Neon Glow</string>
+    <string name="shop_theme_forest">Bosque Bloom</string>
+    <string name="shop_unlocked">Desbloqueado</string>
+    <string name="shop_price_format">Precio: %1$d 🪙</string>
+    <string name="shop_active">ACTIVO</string>
+    <string name="shop_activate">ACTIVAR</string>
+    <string name="shop_pack">PACK</string>
+    <string name="shop_coins">Monedas</string>
+
+    <!-- Daily Challenge Screen -->
+    <string name="daily_challenge_title">RETO DIARIO</string>
+    <string name="daily_challenge_today">Reto de Hoy</string>
+    <string name="daily_challenge_objective_label">OBJETIVO</string>
+    <string name="daily_challenge_objective_desc">Limpia 15 líneas en una partida</string>
+    <string name="daily_challenge_reward_label">RECOMPENSA</string>
+    <string name="daily_challenge_start">EMPEZAR RETO</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_name">Reto Diario</string>
+    <string name="notif_channel_desc">Notificaciones para el reto diario de Block Bloom</string>
+    <string name="notif_title">¡Nuevo Reto Diario!</string>
+    <string name="notif_content">Tu reto de hoy ya está disponible. ¡Entra y gana monedas!</string>
+</resources>

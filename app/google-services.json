@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "75117134284",
+    "project_id": "bloks-fb89e",
+    "storage_bucket": "bloks-fb89e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75117134284:android:7ee3878bc87f5ac8891d69",
+        "android_client_info": {
+          "package_name": "com.centelles.bloks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGiOI6xB82QCq45HvWLbyoi6T-s5fYRtE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

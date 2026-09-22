@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Block Bloom</string>
+
+    <!-- Common -->
+    <string name="common_back">Geri</string>
+    <string name="common_coins_format">🪙 %1$d</string>
+
+    <!-- Menu Screen -->
+    <string name="menu_title_block">BLOCK</string>
+    <string name="menu_title_bloom">BLOOM</string>
+    <string name="menu_play">OYNA</string>
+    <string name="menu_daily_challenge">GÜNLÜK GÖREV</string>
+    <string name="menu_shop">MAĞAZA</string>
+    <string name="menu_settings">AYARLAR</string>
+
+    <!-- Game Screen -->
+    <string name="game_high_score_label">EN YÜKSEK SKOR</string>
+    <string name="game_streak_format">SERİ x%1$d 🔥</string>
+    <string name="game_bomb_mode_active">🚨 BOMBA MODU AKTİF 🚨\n3x3\'lük bir alanı temizlemek için bir hücreye dokunun</string>
+    <string name="game_shuffle_button">🔀 Karıştır (50 🪙)</string>
+    <string name="game_bomb_button">💣 Bomba (100 🪙)</string>
+    <string name="game_cancel">❌ İptal</string>
+    <string name="game_combo_incredible">İNANILMAZ! 🔥</string>
+    <string name="game_combo_super">SÜPER! ✨</string>
+    <string name="game_combo">KOMBO! 💥</string>
+    <string name="game_rotate_cost">🔄 25</string>
+
+    <!-- Game Over Screen -->
+    <string name="game_over_title">OYUN BİTTİ!</string>
+    <string name="game_over_score_label">SKOR</string>
+    <string name="game_over_new_record">YENİ REKOR!</string>
+    <string name="game_over_personal_best">Kişisel en iyi</string>
+    <string name="game_over_continue_video">DEVAM ET (VİDEO)</string>
+    <string name="game_over_continue_coins">DEVAM ET (200 🪙)</string>
+    <string name="game_over_retry">TEKRAR DENE</string>
+    <string name="game_over_menu">ANA MENÜ</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">AYARLAR</string>
+    <string name="settings_sound_effects">Ses Efektleri</string>
+    <string name="settings_vibration">Titreşim (Haptik)</string>
+    <string name="settings_feedback_title">Geri Bildirim &amp; Destek</string>
+    <string name="settings_send_suggestions">Öneri Gönder</string>
+    <string name="settings_send_suggestions_desc">Oyunu geliştirmemize yardımcı olun</string>
+    <string name="settings_rate_us">Bize 5 Yıldız Verin</string>
+    <string name="settings_rate_us_desc">Oyunu sevdiyseniz Google Play\'de bizi destekleyin</string>
+    <string name="settings_version_format">Versiyon %1$s</string>
+
+    <!-- Shop Screen -->
+    <string name="shop_title">MAĞAZA</string>
+    <string name="shop_free_coins">Bedava Altın</string>
+    <string name="shop_watch_video">Video İzle</string>
+    <string name="shop_coins_reward">+100 Altın</string>
+    <string name="shop_watch">İZLE</string>
+    <string name="shop_coin_packs">Altın Paketleri</string>
+    <string name="shop_remove_ads">Reklamları Kaldır</string>
+    <string name="shop_remove_ads_desc">Kesintisiz eğlence</string>
+    <string name="shop_buy">SATIN AL</string>
+    <string name="shop_custom_themes">Özel Temalar</string>
+    <string name="shop_theme_classic">Klasik Tema</string>
+    <string name="shop_theme_neon">Neon Parıltısı</string>
+    <string name="shop_theme_forest">Orman Çiçeği</string>
+    <string name="shop_unlocked">Kilidi Açıldı</string>
+    <string name="shop_price_format">Fiyat: %1$d 🪙</string>
+    <string name="shop_active">AKTİF</string>
+    <string name="shop_activate">AKTİFLEŞTİR</string>
+    <string name="shop_pack">PAKET</string>
+    <string name="shop_coins">Altın</string>
+
+    <!-- Daily Challenge Screen -->
+    <string name="daily_challenge_title">GÜNLÜK GÖREV</string>
+    <string name="daily_challenge_today">Bugünün Görevi</string>
+    <string name="daily_challenge_objective_label">HEDEF</string>
+    <string name="daily_challenge_objective_desc">Tek bir oyunda 15 satır temizle</string>
+    <string name="daily_challenge_reward_label">ÖDÜL</string>
+    <string name="daily_challenge_start">GÖREVE BAŞLA</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_name">Günlük Görev</string>
+    <string name="notif_channel_desc">Block Bloom günlük görev bildirimleri</string>
+    <string name="notif_title">Yeni Günlük Görev!</string>
+    <string name="notif_content">Bugünkü görevin hazır. Gir ve altın kazan!</string>
+</resources>

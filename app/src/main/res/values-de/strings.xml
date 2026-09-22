@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Block Bloom</string>
+
+    <!-- Common -->
+    <string name="common_back">Zurück</string>
+    <string name="common_coins_format">🪙 %1$d</string>
+
+    <!-- Menu Screen -->
+    <string name="menu_title_block">BLOCK</string>
+    <string name="menu_title_bloom">BLOOM</string>
+    <string name="menu_play">SPIELEN</string>
+    <string name="menu_daily_challenge">TÄGLICHE HERAUSFORDERUNG</string>
+    <string name="menu_shop">SHOP</string>
+    <string name="menu_settings">EINSTELLUNGEN</string>
+
+    <!-- Game Screen -->
+    <string name="game_high_score_label">HIGHSCORE</string>
+    <string name="game_streak_format">STREAK x%1$d 🔥</string>
+    <string name="game_bomb_mode_active">🚨 BOMBEN-MODUS AKTIV 🚨\nTipper auf eine Zelle, um einen 3x3-Bereich zu leeren</string>
+    <string name="game_shuffle_button">🔀 Mischen (50 🪙)</string>
+    <string name="game_bomb_button">💣 Bombe (100 🪙)</string>
+    <string name="game_cancel">❌ Abbrechen</string>
+    <string name="game_combo_incredible">UNGLAUBLICH! 🔥</string>
+    <string name="game_combo_super">SUPER! ✨</string>
+    <string name="game_combo">COMBO! 💥</string>
+    <string name="game_rotate_cost">🔄 25</string>
+
+    <!-- Game Over Screen -->
+    <string name="game_over_title">GAME OVER!</string>
+    <string name="game_over_score_label">PUNKTZAHL</string>
+    <string name="game_over_new_record">NEUER REKORD!</string>
+    <string name="game_over_personal_best">Persönliche Bestleistung</string>
+    <string name="game_over_continue_video">WEITER (VIDEO)</string>
+    <string name="game_over_continue_coins">WEITER (200 🪙)</string>
+    <string name="game_over_retry">WIEDERHOLEN</string>
+    <string name="game_over_menu">HAUPTMENÜ</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">EINSTELLUNGEN</string>
+    <string name="settings_sound_effects">Soundeffekte</string>
+    <string name="settings_vibration">Vibration (Haptik)</string>
+    <string name="settings_feedback_title">Feedback &amp; Support</string>
+    <string name="settings_send_suggestions">Vorschläge senden</string>
+    <string name="settings_send_suggestions_desc">Hilf uns, das Spiel zu verbessern</string>
+    <string name="settings_rate_us">Mit 5 Sternen bewerten</string>
+    <string name="settings_rate_us_desc">Wenn du das Spiel liebst, unterstütze uns auf Google Play</string>
+    <string name="settings_version_format">Version %1$s</string>
+
+    <!-- Shop Screen -->
+    <string name="shop_title">SHOP</string>
+    <string name="shop_free_coins">Gratis-Münzen</string>
+    <string name="shop_watch_video">Video ansehen</string>
+    <string name="shop_coins_reward">+100 Münzen</string>
+    <string name="shop_watch">ANSEHEN</string>
+    <string name="shop_coin_packs">Münzpakete</string>
+    <string name="shop_remove_ads">Werbung entfernen</string>
+    <string name="shop_remove_ads_desc">Genieße ohne Unterbrechungen</string>
+    <string name="shop_buy">KAUFEN</string>
+    <string name="shop_custom_themes">Eigene Themes</string>
+    <string name="shop_theme_classic">Klassisches Theme</string>
+    <string name="shop_theme_neon">Neon-Leuchten</string>
+    <string name="shop_theme_forest">Waldblüte</string>
+    <string name="shop_unlocked">Freigeschaltet</string>
+    <string name="shop_price_format">Preis: %1$d 🪙</string>
+    <string name="shop_active">AKTIV</string>
+    <string name="shop_activate">AKTIVIEREN</string>
+    <string name="shop_pack">PAKET</string>
+    <string name="shop_coins">Münzen</string>
+
+    <!-- Daily Challenge Screen -->
+    <string name="daily_challenge_title">TÄGLICHE HERAUSFORDERUNG</string>
+    <string name="daily_challenge_today">Heutige Herausforderung</string>
+    <string name="daily_challenge_objective_label">ZIEL</string>
+    <string name="daily_challenge_objective_desc">Leere 15 Linien in einem einzigen Spiel</string>
+    <string name="daily_challenge_reward_label">BELOHNUNG</string>
+    <string name="daily_challenge_start">HERAUSFORDERUNG STARTEN</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_name">Tägliche Herausforderung</string>
+    <string name="notif_channel_desc">Benachrichtigungen für die tägliche Herausforderung von Block Bloom</string>
+    <string name="notif_title">Neue tägliche Herausforderung!</string>
+    <string name="notif_content">Deine heutige Herausforderung ist jetzt verfügbar. Komm rein und verdiene Münzen!</string>
+</resources>

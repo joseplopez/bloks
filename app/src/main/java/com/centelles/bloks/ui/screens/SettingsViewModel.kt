@@ -20,6 +20,12 @@ class SettingsViewModel @Inject constructor(
         true
     )
 
+    val musicEnabled = repository.musicEnabledFlow.stateIn(
+        viewModelScope,
+        SharingStarted.WhileSubscribed(5000),
+        true
+    )
+
     val vibrationEnabled = repository.vibrationEnabledFlow.stateIn(
         viewModelScope,
         SharingStarted.WhileSubscribed(5000),
@@ -29,6 +35,12 @@ class SettingsViewModel @Inject constructor(
     fun toggleSound(enabled: Boolean) {
         viewModelScope.launch {
             repository.setSoundEnabled(enabled)
+        }
+    }
+
+    fun toggleMusic(enabled: Boolean) {
+        viewModelScope.launch {
+            repository.setMusicEnabled(enabled)
         }
     }
 

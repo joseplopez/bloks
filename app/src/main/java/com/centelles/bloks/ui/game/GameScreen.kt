@@ -60,6 +60,7 @@ fun GameScreen(
     val board = viewModel.board
     val highScore by viewModel.highScore.collectAsState()
     val coins by viewModel.coins.collectAsState()
+    val vibrationEnabled by viewModel.vibrationEnabled.collectAsState()
     
     var boardCoordinates by remember { mutableStateOf<LayoutCoordinates?>(null) }
     val haptic = LocalHapticFeedback.current
@@ -88,6 +89,7 @@ fun GameScreen(
                 .fillMaxSize()
                 .background(MaterialTheme.colorScheme.background)
                 .statusBarsPadding()
+                .navigationBarsPadding()
                 .padding(horizontal = 16.dp, vertical = 8.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
@@ -176,7 +178,9 @@ fun GameScreen(
                 pieces = gameState.availablePieces,
                 onPieceDropped = { index, point -> 
                     viewModel.onPieceDropped(index, point)
-                    haptic.performHapticFeedback(HapticFeedbackType.LongPress)
+                    if (vibrationEnabled) {
+                        haptic.performHapticFeedback(HapticFeedbackType.LongPress)
+                    }
                 },
                 onDragUpdate = { index, point -> viewModel.updateDragPreview(index, point) },
                 onDragCancel = { viewModel.clearDragState() },
@@ -191,6 +195,7 @@ fun GameScreen(
         BannerAd(
             modifier = Modifier
                 .align(Alignment.BottomCenter)
+                .navigationBarsPadding()
                 .padding(bottom = 8.dp)
         )
     }
@@ -217,14 +222,11 @@ fun GameHeader(score: Int, streak: Int, highScore: Int, coins: Int) {
                 )
             }
             
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Text(text = "🪙 ", fontSize = 20.sp)
-                Text(
-                    text = coins.toString(),
-                    style = MaterialTheme.typography.titleLarge,
-                    color = Color.White
-                )
-            }
+            Text(
+                text = stringResource(R.string.common_coins_format, coins),
+                style = MaterialTheme.typography.titleLarge,
+                color = Color.White
+            )
         }
         
         Spacer(modifier = Modifier.height(16.dp))
@@ -504,7 +506,8 @@ fun DraggablePiece(
     var lastGridPos by remember { mutableStateOf<Point?>(null) }
     
     val density = LocalDensity.current
-    val cellSize = 30.dp
+    val maxDim = maxOf(piece.width, piece.height)
+    val cellSize = if (maxDim > 0) (65.dp / maxDim).coerceAtMost(22.dp) else 22.dp
     val boardCellSize = 40.dp
     val boardSpacing = 2.dp
 

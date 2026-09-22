@@ -52,7 +52,7 @@ fun GameOverScreen(
         Spacer(modifier = Modifier.height(32.dp))
 
         Text(
-            text = "🪙 $coins",
+            text = stringResource(R.string.common_coins_format, coins),
             style = MaterialTheme.typography.titleLarge,
             color = MaterialTheme.colorScheme.primary,
             fontWeight = FontWeight.Bold

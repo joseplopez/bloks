@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Block Bloom</string>
+
+    <!-- Common -->
+    <string name="common_back">Kembali</string>
+    <string name="common_coins_format">🪙 %1$d</string>
+
+    <!-- Menu Screen -->
+    <string name="menu_title_block">BLOCK</string>
+    <string name="menu_title_bloom">BLOOM</string>
+    <string name="menu_play">MAIN</string>
+    <string name="menu_daily_challenge">TANTANGAN HARIAN</string>
+    <string name="menu_shop">TOKO</string>
+    <string name="menu_settings">PENGATURAN</string>
+
+    <!-- Game Screen -->
+    <string name="game_high_score_label">SKOR TERTINGGI</string>
+    <string name="game_streak_format">STREAK x%1$d 🔥</string>
+    <string name="game_bomb_mode_active">🚨 MODE BOM AKTIF 🚨\nKetuk sel untuk menghapus area 3x3</string>
+    <string name="game_shuffle_button">🔀 Acak (50 🪙)</string>
+    <string name="game_bomb_button">💣 Bom (100 🪙)</string>
+    <string name="game_cancel">❌ Batal</string>
+    <string name="game_combo_incredible">LUAR BIASA! 🔥</string>
+    <string name="game_combo_super">SUPER! ✨</string>
+    <string name="game_combo">KOMBO! 💥</string>
+    <string name="game_rotate_cost">🔄 25</string>
+
+    <!-- Game Over Screen -->
+    <string name="game_over_title">PERMAINAN BERAKHIR!</string>
+    <string name="game_over_score_label">SKOR</string>
+    <string name="game_over_new_record">REKOR BARU!</string>
+    <string name="game_over_personal_best">Terbaik pribadi</string>
+    <string name="game_over_continue_video">LANJUTKAN (VIDEO)</string>
+    <string name="game_over_continue_coins">LANJUTKAN (200 🪙)</string>
+    <string name="game_over_retry">COBA LAGI</string>
+    <string name="game_over_menu">MENU UTAMA</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">PENGATURAN</string>
+    <string name="settings_sound_effects">Efek Suara</string>
+    <string name="settings_vibration">Getaran (Haptik)</string>
+    <string name="settings_feedback_title">Umpan Balik &amp; Dukungan</string>
+    <string name="settings_send_suggestions">Kirim Saran</string>
+    <string name="settings_send_suggestions_desc">Bantu kami meningkatkan game ini</string>
+    <string name="settings_rate_us">Beri Kami Bintang 5</string>
+    <string name="settings_rate_us_desc">Jika Anda menyukai game ini, dukung kami di Google Play</string>
+    <string name="settings_version_format">Versi %1$s</string>
+
+    <!-- Shop Screen -->
+    <string name="shop_title">TOKO</string>
+    <string name="shop_free_coins">Koin Gratis</string>
+    <string name="shop_watch_video">Tonton Video</string>
+    <string name="shop_coins_reward">+100 Koin</string>
+    <string name="shop_watch">TONTON</string>
+    <string name="shop_coin_packs">Paket Koin</string>
+    <string name="shop_remove_ads">Hapus Iklan</string>
+    <string name="shop_remove_ads_desc">Nikmati tanpa gangguan</string>
+    <string name="shop_buy">BELI</string>
+    <string name="shop_custom_themes">Tema Kustom</string>
+    <string name="shop_theme_classic">Tema Klasik</string>
+    <string name="shop_theme_neon">Kilau Neon</string>
+    <string name="shop_theme_forest">Hutan Bloom</string>
+    <string name="shop_unlocked">Terbuka</string>
+    <string name="shop_price_format">Harga: %1$d 🪙</string>
+    <string name="shop_active">AKTIF</string>
+    <string name="shop_activate">AKTIFKAN</string>
+    <string name="shop_pack">PAKET</string>
+    <string name="shop_coins">Koin</string>
+
+    <!-- Daily Challenge Screen -->
+    <string name="daily_challenge_title">TANTANGAN HARIAN</string>
+    <string name="daily_challenge_today">Tantangan Hari Ini</string>
+    <string name="daily_challenge_objective_label">OBJEKTIF</string>
+    <string name="daily_challenge_objective_desc">Hapus 15 baris dalam satu permainan</string>
+    <string name="daily_challenge_reward_label">HADIAH</string>
+    <string name="daily_challenge_start">MULAI TANTANGAN</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_name">Tantangan Harian</string>
+    <string name="notif_channel_desc">Notifikasi untuk tantangan harian Block Bloom</string>
+    <string name="notif_title">Tantangan Harian Baru!</string>
+    <string name="notif_content">Tantangan hari ini sudah tersedia. Masuk dan dapatkan koin!</string>
+</resources>

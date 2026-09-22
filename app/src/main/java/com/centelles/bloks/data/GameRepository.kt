@@ -23,6 +23,7 @@ class GameRepository @Inject constructor(
     private val COINS = intPreferencesKey("coins")
     private val REMOVE_ADS = booleanPreferencesKey("remove_ads")
     private val SOUND_ENABLED = booleanPreferencesKey("sound_enabled")
+    private val MUSIC_ENABLED = booleanPreferencesKey("music_enabled")
     private val VIBRATION_ENABLED = booleanPreferencesKey("vibration_enabled")
     private val ACTIVE_THEME = intPreferencesKey("active_theme")
     private val UNLOCKED_THEMES = intPreferencesKey("unlocked_themes")
@@ -41,6 +42,10 @@ class GameRepository @Inject constructor(
 
     val soundEnabledFlow: Flow<Boolean> = context.dataStore.data.map { preferences ->
         preferences[SOUND_ENABLED] ?: true
+    }
+
+    val musicEnabledFlow: Flow<Boolean> = context.dataStore.data.map { preferences ->
+        preferences[MUSIC_ENABLED] ?: true
     }
 
     val vibrationEnabledFlow: Flow<Boolean> = context.dataStore.data.map { preferences ->
@@ -94,6 +99,12 @@ class GameRepository @Inject constructor(
     suspend fun setSoundEnabled(enabled: Boolean) {
         context.dataStore.edit { preferences ->
             preferences[SOUND_ENABLED] = enabled
+        }
+    }
+
+    suspend fun setMusicEnabled(enabled: Boolean) {
+        context.dataStore.edit { preferences ->
+            preferences[MUSIC_ENABLED] = enabled
         }
     }
 

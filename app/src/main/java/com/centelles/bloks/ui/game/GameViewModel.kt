@@ -5,6 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.centelles.bloks.audio.SoundManager
 import com.centelles.bloks.data.GameRepository
 import com.centelles.bloks.engine.logic.GameEngine
 import com.centelles.bloks.engine.model.Point
@@ -19,7 +20,8 @@ import javax.inject.Inject
 class GameViewModel @Inject constructor(
     private val gameEngine: GameEngine,
     private val repository: GameRepository,
-    private val analyticsManager: AnalyticsManager
+    private val analyticsManager: AnalyticsManager,
+    private val soundManager: SoundManager
 ) : ViewModel() {
 
     var gameState by mutableStateOf(gameEngine.getGameState())
@@ -38,6 +40,12 @@ class GameViewModel @Inject constructor(
         viewModelScope,
         SharingStarted.WhileSubscribed(5000),
         0
+    )
+
+    val vibrationEnabled = repository.vibrationEnabledFlow.stateIn(
+        viewModelScope,
+        SharingStarted.WhileSubscribed(5000),
+        true
     )
 
     // Estado para la previsualización del arrastre (ghost piece)
@@ -79,6 +87,7 @@ class GameViewModel @Inject constructor(
         val oldBoard = board.copy()
         val success = gameEngine.placePiece(pieceIndex, at)
         if (success) {
+            soundManager.playPlacePiece()
             val newGameState = gameEngine.getGameState()
             val newBoard = newGameState.board
             
@@ -103,7 +112,13 @@ class GameViewModel @Inject constructor(
 
             if (cleared.isNotEmpty()) {
                 clearingPoints = cleared
-                showComboAnimation = newGameState.streak > 1 || cleared.size > 8
+                val isCombo = newGameState.streak > 1 || cleared.size > 8
+                showComboAnimation = isCombo
+                if (isCombo) {
+                    soundManager.playCombo()
+                } else {
+                    soundManager.playClearLine()
+                }
                 lastPointsGained = newGameState.score - gameState.score
                 
                 viewModelScope.launch {
@@ -122,6 +137,7 @@ class GameViewModel @Inject constructor(
     }
 
     private fun saveGameResult() {
+        soundManager.playGameOver()
         analyticsManager.logGameOver(gameState.score, highScore.value)
         viewModelScope.launch {
             repository.saveHighScore(gameState.score)

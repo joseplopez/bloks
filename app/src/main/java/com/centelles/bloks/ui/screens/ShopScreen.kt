@@ -46,7 +46,7 @@ fun ShopScreen(
                 },
                 actions = {
                     Text(
-                        text = "🪙 $coins",
+                        text = stringResource(R.string.common_coins_format, coins),
                         modifier = Modifier.padding(end = 16.dp),
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.primary
@@ -199,7 +199,7 @@ fun ShopItemCard(product: com.android.billingclient.api.ProductDetails, onBuy: (
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(text = "🪙", fontSize = 40.sp)
-            Text(text = product.name.filter { it.isDigit() }.ifEmpty { stringResource(R.string.shop_pack) }, fontWeight = FontWeight.Black, fontSize = 24.sp)
+            Text(text = product.productId.filter { it.isDigit() }.ifEmpty { stringResource(R.string.shop_pack) }, fontWeight = FontWeight.Black, fontSize = 24.sp)
             Text(text = stringResource(R.string.shop_coins), style = MaterialTheme.typography.labelSmall)
             Spacer(modifier = Modifier.height(16.dp))
             Button(

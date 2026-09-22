@@ -28,3 +28,13 @@
     public static int w(...);
     public static int e(...);
 }
+
+# Android App Startup & WorkManager rules for AGP 9+ compatibility
+-keepnames class * extends androidx.startup.Initializer
+
+-keep class androidx.work.impl.WorkDatabase_Impl { *; }
+
+-keep class * extends androidx.work.ListenableWorker {
+    <init>(android.content.Context, androidx.work.WorkerParameters);
+}
+

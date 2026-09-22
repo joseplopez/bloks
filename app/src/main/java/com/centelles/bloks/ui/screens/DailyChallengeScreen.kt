@@ -63,10 +63,11 @@ fun DailyChallengeScreen(onBack: () -> Unit, onStartChallenge: () -> Unit) {
                     Spacer(modifier = Modifier.height(24.dp))
                     
                     Text(stringResource(R.string.daily_challenge_reward_label), style = MaterialTheme.typography.labelLarge)
-                    Row(verticalAlignment = Alignment.CenterVertically) {
-                        Text("🪙", fontSize = 24.sp)
-                        Text(" 200", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Black)
-                    }
+                    Text(
+                        text = stringResource(R.string.common_coins_format, 200),
+                        style = MaterialTheme.typography.titleLarge,
+                        fontWeight = FontWeight.Black
+                    )
                 }
             }
             
